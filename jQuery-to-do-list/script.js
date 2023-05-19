@@ -56,6 +56,20 @@ if(inputValue === '') {
 } else {
   $('#list').append(1i);
 }
+
+//BONUS PRACICING jQUERY code 
+//DMV says 30 max characters for a full name given 
+$('input').each(function(i){
+if(inputValue().length<=30){
+  alert('Name must be 30 characters or less)
+}
+});
+
+//STEP 2 CROSSING AN ITEM OUT 
+function crossOut() {
+  li.toggleClass("strike");
+}
+//add event listener in jQuery format 
  
 
 
