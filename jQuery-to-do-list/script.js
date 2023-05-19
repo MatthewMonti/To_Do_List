@@ -61,9 +61,18 @@ if(inputValue === '') {
 
 //BONUS PRACICING jQUERY code 
 //DMV says 30 max characters for a full name given 
-$('input').each(function(i){
+//With $(this).value = '' you're assigning an empty string as the value property of the jQuery object that wraps this -- not the value of this itself.
+/*
+$(this).value is attempting to call the 'value' property of a jQuery object, which does not exist. Native JavaScript does have a 'value' property on certain HTML objects, but if you are operating on a jQuery object you must access the value by calling $(this).val().
+function i stands for function parameter 
+*/
+$('input').each(function (i){
+let inputValue = $(this).val();
 if(inputValue().length<=30){
   alert('Name must be 30 characters or less');
+}
+if(inputValue().pattern=(A-Z)(a-z)){
+  alert('Letters Only');
 }
 });
 
@@ -122,12 +131,6 @@ li.append(x);
 // 	}
    $('#list').sortable();
 */
-
-
-
-
-
-
 
 
 
