@@ -64,21 +64,23 @@ if(inputValue === '') {
 //add event listener in jQuery format 
 //on is equivalent to addEventListener
 //dblclick = double click 
+
  li.on("dblclick",function(){
   li.addClass("strike");
  });
 
  
 //STEP 3 DELETE BUTTON 
-let x = $('<x></x>');
-x.append(document.createTextNode('X'));
-li.append(x);
+  let x = $('<x></x>');
+  x.append(document.createTextNode('X'));
+  li.append(x);
 
- x.on("click", deleteListItem);
-  function deleteListItem(){
-    li.addClass("delete")
- }
-  $('#list').sortable();
+  x.on("click", deleteListItem);
+    function deleteListItem(){
+      li.addClass("delete")
+  }
+  //STEP 4 SORT OUT GUEST LIST
+    $('#list').sortable();
 }
 
 // If you get stuck, you can look below for the jQuery code. However, try yourself to convert the vanilla JS code provided to jQuery first.
