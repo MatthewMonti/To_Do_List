@@ -74,34 +74,18 @@ if(inputValue().length<=30){
  });
 
 //STEP 3 DELETE BUTTON 
-let delete = $('<crossoutButton></crossOutButton>');
-delete.append(document.createTextNode('X'));
-li.append(crossOutButton);
+let x = $('<x></x>');
+x.append(document.createTextNode('X'));
+li.append(x);
 
  delete.on("click", deleteListItem);
- function deleteListItem(){
- li.addClass("delete")
+  function deleteListItem(){
+    li.addClass("delete")
  }
   $('#list').sortable();
 
 
-
-
-
-
-
-
-
-
-
 // If you get stuck, you can look below for the jQuery code. However, try yourself to convert the vanilla JS code provided to jQuery first.
-
-
-
-
-
-
-
 
   /*
 // jQuery Code
