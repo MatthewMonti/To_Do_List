@@ -42,6 +42,8 @@
 //  STEP 1 ADDING NEW ITEM TO LIST OF ITEMS:
 //  $ &or jQuery is variable assigned a function 
 
+function newItem(){
+
 //Create List
  let li = $('<li></li>');
 
@@ -84,7 +86,7 @@ li.append(x);
     li.addClass("delete")
  }
   $('#list').sortable();
-
+}
 
 // If you get stuck, you can look below for the jQuery code. However, try yourself to convert the vanilla JS code provided to jQuery first.
 
