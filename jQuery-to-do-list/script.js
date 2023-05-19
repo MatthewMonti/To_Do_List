@@ -93,16 +93,12 @@ let crossOutButton = $('<crossOutButton></crossOutButton>');
 crossOutButton.append(document.createTextNode('X'));
 li.append(crossOutButton);
 
-//   crossOutButton.on("click", deleteListItem);
-//   function deleteListItem(){
-// 		li.addClass("delete")
-// 	}
+crossOutButton.on("click", deleteListItem);
+function deleteListItem(){ 
+	li.addClass("delete")	
+	}
  $('#list').sortable();
 }
-
-
-
-
 
 // If you get stuck, you can look below for the jQuery code. However, try yourself to convert the vanilla JS code provided to jQuery first.
 
