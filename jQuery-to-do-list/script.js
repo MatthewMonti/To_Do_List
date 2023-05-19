@@ -72,8 +72,8 @@ if(inputValue === '') {
  
 //STEP 3 DELETE BUTTON 
 
-/*
-I CAN'T GET THE CODE BELOW TO WORK WITH NEW NAME I DON'T UNDERSTAND WHY ? X CLOSE BUTTON JUST ASKS AS A LETTER 
+
+//I CAN'T GET THE CODE BELOW TO WORK WITH NEW NAME I DON'T UNDERSTAND WHY ? X CLOSE BUTTON JUST ASKS AS A LETTER 
   let x = $('<x></x>');
   x.append(document.createTextNode('X'));
   li.append(x);
@@ -86,8 +86,8 @@ I CAN'T GET THE CODE BELOW TO WORK WITH NEW NAME I DON'T UNDERSTAND WHY ? X CLOS
   //STEP 4 SORT OUT GUEST LIST
     $('#list').sortable();
 }
-*/
 
+/*
 //3. Adding a delete button
 let crossOutButton = $('<crossOutButton></crossOutButton>');
 crossOutButton.append(document.createTextNode('X'));
