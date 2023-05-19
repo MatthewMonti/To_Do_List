@@ -20,7 +20,7 @@
  	//	li.classList.toggle("strike");
  //	}
 
- 	li.addEventListener("dblclick",crossOut);
+ 	//li.addEventListener("dblclick",crossOut);
 
  //3(i). Adding the delete button "X": 
    //let crossOutButton = document.createElement("crossOutButton");
