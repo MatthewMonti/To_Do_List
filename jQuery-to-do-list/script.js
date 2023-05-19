@@ -59,29 +59,6 @@ if(inputValue === '') {
   $('#list').append(li);
 }
 
-//BONUS PRACICING jQUERY code 
-//DMV says 30 max characters for a full name given 
-//With $(this).value = '' you're assigning an empty string as the value property of the jQuery object that wraps this -- not the value of this itself.
-/*
-$(this).value is attempting to call the 'value' property of a jQuery object, which does not exist. Native JavaScript does have a 'value' property on certain HTML objects, but if you are operating on a jQuery object you must access the value by calling $(this).val().
-*/
-$( "#myinput" ).rules( "add", {
-  required: true,
-  maxlength: 30,
-  messages: {
-    required: "Max Character Name",
-    maxlength: jQuery.validator.format("30 characters or less")
-  }
-});
-
-$( "#myinput" ).rules( "add", {
-  required: true,
-  lettersOnly,
-  messages: {
-    required: "Name Only",
-  }
-});
-$("#input").lettersOnly() 
 
 //STEP 2 CROSSING AN ITEM OUT 
 //add event listener in jQuery format 
