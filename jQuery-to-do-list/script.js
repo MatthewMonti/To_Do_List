@@ -67,7 +67,7 @@ $(this).value is attempting to call the 'value' property of a jQuery object, whi
 function i stands for function parameter 
 */
 $('input').each(function (i){
-let inputValue = $(this).val();
+let inputValue = $('#input').val();
 if(inputValue().length<=30){
   alert('Name must be 30 characters or less');
 }
