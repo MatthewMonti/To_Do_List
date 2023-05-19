@@ -73,7 +73,18 @@ if(inputValue().length<=30){
   li.addClass("strike");
  });
 
- 
+//STEP 3 DELETE BUTTON 
+let delete = $('<crossoutButton></crossOutButton>');
+delete.append(document.createTextNode('X'));
+li.append(crossOutButton);
+
+ delete.on("click", deleteListItem);
+ function deleteListItem(){
+ li.addClass("delete")
+ }
+  $('#list').sortable();
+
+
 
 
 
