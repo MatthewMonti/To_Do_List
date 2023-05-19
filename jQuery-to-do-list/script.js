@@ -98,7 +98,7 @@ li.append(crossOutButton);
 // 		li.addClass("delete")
 // 	}
  $('#list').sortable();
-*/
+}
 
 
 
