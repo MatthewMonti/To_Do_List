@@ -1,5 +1,5 @@
-*/
-function newItem(){
+
+//function newItem(){
 
 //javascript
 //1. Adding a new item to the list of items: 
@@ -31,7 +31,7 @@ function newItem(){
  //3(ii). Adding CLASS DELETE (DISPLAY: NONE) from the css:
   // function deleteListItem(){
  	//	li.classList.add("delete")
- 	}
+ 	//}
  // 4. Reordering the items: 
    $('#list').sortable();
 
@@ -49,19 +49,19 @@ function newItem(){
  let inputValue = $('#input').val();
 //append value to input
   li.append(inputValue);
-//Message alarts
+//Message alerts
 //if message is NOT complete message user
 if(inputValue === '') {
   alert("Message is incomplete");
 } else {
-  $('#list').append(1i);
+  $('#list').append(li);
 }
 
 //BONUS PRACICING jQUERY code 
 //DMV says 30 max characters for a full name given 
 $('input').each(function(i){
 if(inputValue().length<=30){
-  alert('Name must be 30 characters or less);
+  alert('Name must be 30 characters or less');
 }
 });
 
@@ -73,12 +73,13 @@ if(inputValue().length<=30){
   li.addClass("strike");
  });
 
+ 
 //STEP 3 DELETE BUTTON 
 let x = $('<x></x>');
 x.append(document.createTextNode('X'));
 li.append(x);
 
- delete.on("click", deleteListItem);
+ x.on("click", deleteListItem);
   function deleteListItem(){
     li.addClass("delete")
  }
