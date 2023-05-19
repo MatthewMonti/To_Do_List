@@ -71,6 +71,9 @@ if(inputValue === '') {
 
  
 //STEP 3 DELETE BUTTON 
+
+/*
+I CAN'T GET THE CODE BELOW TO WORK WITH NEW NAME I DON'T UNDERSTAND WHY ? X CLOSE BUTTON JUST ASKS AS A LETTER 
   let x = $('<x></x>');
   x.append(document.createTextNode('X'));
   li.append(x);
@@ -79,9 +82,27 @@ if(inputValue === '') {
     function deleteListItem(){
       li.addClass("delete")
   }
+
   //STEP 4 SORT OUT GUEST LIST
     $('#list').sortable();
 }
+*/
+
+//3. Adding a delete button
+let crossOutButton = $('<crossOutButton></crossOutButton>');
+crossOutButton.append(document.createTextNode('X'));
+li.append(crossOutButton);
+
+//   crossOutButton.on("click", deleteListItem);
+//   function deleteListItem(){
+// 		li.addClass("delete")
+// 	}
+ $('#list').sortable();
+*/
+
+
+
+
 
 // If you get stuck, you can look below for the jQuery code. However, try yourself to convert the vanilla JS code provided to jQuery first.
 
