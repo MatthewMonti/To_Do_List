@@ -40,7 +40,8 @@
 
  //JAVASCRIPT WITH JQUERY 
 //  STEP 1 ADDING NEW ITEM TO LIST OF ITEMS:
-//  $ &or jQuery is variable assigned a function 
+//  $ &or jQuery is variable assigned a function
+// ONLY SECTION THAT MAKES SENSE TO ME 
 
 function newItem(){
 
@@ -60,20 +61,30 @@ if(inputValue === '') {
 }
 
 
-//STEP 2 CROSSING AN ITEM OUT 
+//STEP 2 CROSSING AN ITEM OUT MY VERSION WON'T WORK 
+//WAS IN MATERIAL
 //add event listener in jQuery format 
 //on is equivalent to addEventListener
 //dblclick = double click 
+// WHY DOES THIS VERSION OF MY CODE NOT WORK?
+// li.on("dblclick",function(){
+//  li.addClass("strike");
+// });
 
- li.on("dblclick",function(){
-  li.addClass("strike");
- });
+//STEP 2 AS DEMONSTRATED IN "ANSWERS"
+//2. Crossing an item out:
+function crossOut() {
+  li.toggleClass("strike");
+}
+
+
 
  
 //STEP 3 DELETE BUTTON 
 
 
-//I CAN'T GET THE CODE BELOW TO WORK WITH NEW NAME I DON'T UNDERSTAND WHY ? X CLOSE BUTTON JUST ASKS AS A LETTER 
+//I CAN'T GET THE CODE BELOW TO WORK WITH NEW NAME FOR BUTTON I DON'T UNDERSTAND WHY ? X CLOSE BUTTON JUST ASKS AS X LETTER & WHY SORTABLE NOT COME UP AS A FUNCTION?
+/*
   let x = $('<x></x>');
   x.append(document.createTextNode('X'));
   li.append(x);
@@ -86,8 +97,8 @@ if(inputValue === '') {
   //STEP 4 SORT OUT GUEST LIST
     $('#list').sortable();
 }
+*/
 
-/*
 //3. Adding a delete button
 let crossOutButton = $('<crossOutButton></crossOutButton>');
 crossOutButton.append(document.createTextNode('X'));
