@@ -1,5 +1,5 @@
 
-function newItem(){
+/*function newItem(){
 
 //javascript
 //1. Adding a new item to the list of items: 
@@ -36,6 +36,7 @@ function newItem(){
    $('#list').sortable();
 
 }
+/*
 
  
 
