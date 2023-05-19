@@ -38,7 +38,26 @@
 }
 /*
 
+ //JAVASCRIPT WITH JQUERY 
+//  STEP 1 ADDING NEW ITEM TO LIST OF ITEMS:
+//  $ &or jQuery is variable assigned a function 
+
+//Create List
+ let li = $('<li></li>');
+
+ //.val() for adding a value = # of items on list
+ let inputValue = $('#input').val();
+//append value to input
+  li.append(inputValue);
+//Message alarts
+//if message is NOT complete message user
+if(inputValue === '') {
+  alert("Message is incomplete");
+} else {
+  $('#list').append(1i);
+}
  
+
 
 
 
