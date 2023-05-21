@@ -59,20 +59,21 @@ if(inputValue === '') {
 
 
 //STEP 2 CROSSING AN ITEM OUT MY VERSION WON'T WORK 
-//WAS IN MATERIAL
+
+//CODE BELOW FROM ANSWERS WORKS FINE 
 //add event listener in jQuery format 
 //on is equivalent to addEventListener
 //dblclick = double click 
-// WHY DOES THIS VERSION OF MY CODE NOT WORK?
-// li.on("dblclick",function(){
-//  li.addClass("strike");
-// });
+
 
 //STEP 2 AS DEMONSTRATED IN "ANSWERS"
 //2. Crossing an item out:
 function crossOut() {
   li.toggleClass("strike");
 }
+  li.on("dblclick",function(){
+     li.addClass("strike");
+});
 
 
 
