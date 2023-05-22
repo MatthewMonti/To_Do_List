@@ -32,16 +32,10 @@ javascript
  		li.classList.add("delete")
  }
  
- */ The toggleClass() method toggles between adding and removing one or more class names from the selected elements.
-
-This method checks each element for the specified class names. The class names are added if missing, and removed if already set - This creates a toggle effect.
-
-However, by using the "switch" parameter, you can specify to only remove, or only add a class name. /*
- 
- 
 4. Reordering the items: 
    $('#list').sortable();
 }
+
 */
  //JAVASCRIPT WITH JQUERY 
 //  STEP 1 ADDING NEW ITEM TO LIST OF ITEMS:
@@ -73,7 +67,13 @@ function crossOut() {
   li.on("dblclick",function(){
      li.addClass("strike");
 });
+/*
+The toggleClass() method toggles between adding and removing one or more class names from the selected elements.
 
+This method checks each element for the specified class names. The class names are added if missing, and removed if already set - This creates a toggle effect.
+
+However, by using the "switch" parameter, you can specify to only remove, or only add a class name.
+*/
  
 //STEP 3 DELETE BUTTON 
 //3. Adding a delete button
